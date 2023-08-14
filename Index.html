@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="program.js"></script>
+  </head>
+  <body>
+    <!-- Home -->
+    <div id="header">
+      <div class="container">
+        <nav id="navbar">
+          <h1 class="logo">PORTFOLIO</h1>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h2>Hi, I'm <span>Tushar Pulani</span></h2>
+          <p>A Frontend Web Developer</p>
+          <button onclick="window.location.href= 'Tushar CV.pdf'">
+            Download Resume
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <h3 class="heading">About Me</h3>
+        <p class="text-css">
+          Looking for job with an organization where I could enhance my
+          knowledge <br />and skills while working with experienced person.
+          Recently, I have done my 
+          BTech. in Electronics and Communication Engineering from Guru Tegh
+          Bahadur Institute of Technology, New Delhi. <br>
+          Want to pursue my job in a reputed organization with an international
+          stature <br> which gives me commendable exposure.
+        </p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills">
+      <div class="container">
+        <h3 class="heading">Skills</h3>
+        <div class="row">
+          <div class="column-1">
+            <img src="/Images/java1.png" class="resp-img" alt="" />
+            <img src="/Images/HTML.png" class="resp-img" alt="" />
+            <img src="/Images/CSS.png" class="resp-img" alt="" />
+            <img src="/Images/JS.png" class="resp-img" alt="" />
+            <img src="/Images/bootstrap.jpeg" class="resp-img" alt="" />
+            <img src="/Images/MySql.png" class="resp-img" alt="" />
+          </div>
+          <div class="column-2">
+            <label for="Java">Java</label><br />
+            <progress max="100" value="80" style="accent-color: red"></progress
+            ><br />
+            <label for="HTML">HTML</label><br />
+            <progress
+              max="100"
+              value="90"
+              style="accent-color: green"
+            ></progress
+            ><br />
+            <label for="CSS">CSS</label><br />
+            <progress max="100" value="70" style="accent-color: navy"></progress
+            ><br />
+            <label for="JavaScript">JavaScript</label><br />
+            <progress
+              max="100"
+              value="80"
+              style="accent-color: purple"
+            ></progress
+            ><br />
+            <label for="Bootstrap">Bootstrap</label><br />
+            <progress
+              max="100"
+              value="90"
+              style="accent-color: light-blue"
+            ></progress
+            ><br />
+            <label for="MySQL">MySQL</label><br />
+            <progress
+              max="100"
+              value="70"
+              style="accent-color: deeppink"
+            ></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+      <div class="container">
+        <h3 class="heading">Projects</h3>
+        <div class="row-1">
+          <div class="col-1">
+            <img src="/Images/Ecomm.jpg" class="img-project" alt="" />
+            <h2>Food Delivery Website</h2>
+            <p>
+              This project involves multiple webpages like product listing,
+              product detailing, online registration and cart. Utilizing HTML,
+              CSS, and JavaScript, the aim is to deliver a seamless experience
+              for website users.
+            </p>
+          </div>
+          <div class="col-2">
+            <img src="/Images/personalport.jpg" class="img-project" alt="" />
+            <h2>Personal Portfolio</h2>
+            <p>
+              This is my personal portfolio including my personal information
+              with my skills of learning frontend development like Html, CSS and
+              JavaScript
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+      <div class="container">
+        <h3 class="heading">Education</h3>
+        <div class="row-1">
+          <div class="col1">
+            <img src="/Images/edu.png" class="img-edu" alt="" />
+          </div>
+          <div class="col2">
+            <p>
+              Education is essential for personal growth, societal progress, and
+              economic development, equipping individuals with knowledge,
+              skills, and critical thinking abilities to navigate the challenges
+              of life and contribute positively to their communities.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('Graduation')">
+                Graduation
+              </p>
+              <p class="tab-links" onclick="openTab('intermediate')">
+                Intermediate School
+              </p>
+              <p class="tab-links" onclick="openTab('high')">High School</p>
+            </div>
+            <div class="tab-contents active-tab" id="Graduation">
+              <h4>Guru Tegh Bahadur Institute of Technology, New Delhi</h4>
+              <ul>
+                <li>Electronics and Communication Engineering</li>
+                <li>82%</li>
+                <li>2019-2023</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="intermediate">
+              <h4>Shiv Public Sr. Sec. School, Sohna</h4>
+              <ul>
+                <li>Non Medical</li>
+                <li>74%</li>
+                <li>2018-2019</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="high">
+              <h4>Shiv Public Sr. Sec. School, Sohna</h4>
+              <ul>
+                <li>89%</li>
+                <li>2016-2017</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <h3 class="heading">Contact Me</h3>
+        <div class="row-2">
+          <div class="contact-left">
+            <h2 class="sub-title">Personal Info.</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>tusharpulani2828@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>9050091991</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                id=""
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>
+        Copyright <i class="fa-solid fa-copyright"></i> by Tushar. All Rights
+        Reserved.
+      </p>
+    </div>
+
+    
+  </body>
+</html>
